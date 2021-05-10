@@ -19,5 +19,7 @@
     <string name="play">PLAY SUPERRACE</string>
     <string name="ranking_main">POINT RANKING</string>
     <string name="schedule_main">SCHEDULE</string>
-    
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

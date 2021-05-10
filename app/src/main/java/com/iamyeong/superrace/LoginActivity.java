@@ -59,7 +59,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         switch (v.getId()) {
 
+            case R.id.btn_sign_in :
+                String id = et_id.getText().toString();
+                String pw = et_pw.getText().toString();
 
+                System.out.println(id + ", " + pw);
+
+                break;
+
+            case R.id.btn_sign_up :
+
+                //Fragment
+                break;
 
         }
 

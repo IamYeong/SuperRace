@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="@string/id"
+            android:hint="@string/id"
             />
 
         <EditText
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="@string/pw"
+            android:hint="@string/pw"
             />
 
         <LinearLayout
@@ -42,6 +42,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="right"
+
+            android:layout_marginBottom="20dp"
             >
 
             <TextView
@@ -136,9 +138,10 @@
 
             <ImageView
                 android:id="@+id/img_kakao"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher_background"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/kakao"
+
 
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -146,9 +149,9 @@
 
             <ImageView
                 android:id="@+id/img_facebook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher_background"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/facebook"
 
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -156,9 +159,9 @@
 
             <ImageView
                 android:id="@+id/img_naver"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher_background"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/naver"
 
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
