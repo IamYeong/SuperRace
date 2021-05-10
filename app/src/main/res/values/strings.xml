@@ -15,5 +15,9 @@
     <string name="kakao">카카오톡</string>
     <string name="facebook">페이스북</string>
     <string name="naver">네이버</string>
+
+    <string name="play">PLAY SUPERRACE</string>
+    <string name="ranking_main">POINT RANKING</string>
+    <string name="schedule_main">SCHEDULE</string>
     
 </resources>
