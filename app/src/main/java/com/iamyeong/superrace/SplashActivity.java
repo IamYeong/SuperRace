@@ -20,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        intent = new Intent(SplashActivity.this, MainActivity.class);
+        intent = new Intent(SplashActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
 
