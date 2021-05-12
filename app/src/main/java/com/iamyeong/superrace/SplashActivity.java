@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.iamyeong.superrace.login.LoginActivity;
+
 public class SplashActivity extends AppCompatActivity {
 
     private Intent intent;
