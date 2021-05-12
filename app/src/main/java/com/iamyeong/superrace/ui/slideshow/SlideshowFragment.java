@@ -1,4 +1,4 @@
-package com.iamyeong.superrace.play.ui.slideshow;
+package com.iamyeong.superrace.ui.slideshow;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.iamyeong.superrace.play.R;
+import com.iamyeong.superrace.R;
 
 public class SlideshowFragment extends Fragment {
 

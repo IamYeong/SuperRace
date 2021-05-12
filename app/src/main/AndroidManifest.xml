@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SuperRace">
         <activity
-            android:name=".play.PlayDrawerActivity"
+            android:name=".PlayDrawerActivity"
             android:label="@string/title_activity_play_drawer"
             android:theme="@style/Theme.SuperRace.NoActionBar"></activity>
-        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".LoginActivity" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">

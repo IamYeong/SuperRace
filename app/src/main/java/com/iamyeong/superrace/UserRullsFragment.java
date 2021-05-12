@@ -1,4 +1,4 @@
-package com.iamyeong.superrace.login;
+package com.iamyeong.superrace;
 
 import android.os.Bundle;
 
@@ -7,8 +7,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.iamyeong.superrace.R;
 
 /**
  * A simple {@link Fragment} subclass.

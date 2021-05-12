@@ -1,4 +1,4 @@
-package com.iamyeong.superrace.play;
+package com.iamyeong.superrace;
 
 import android.os.Bundle;
 import android.view.View;

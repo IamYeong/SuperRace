@@ -1,4 +1,4 @@
-package com.iamyeong.superrace.login;
+package com.iamyeong.superrace;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-
-import com.iamyeong.superrace.R;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 

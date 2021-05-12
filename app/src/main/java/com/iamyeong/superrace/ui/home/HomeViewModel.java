@@ -1,4 +1,4 @@
-package com.iamyeong.superrace.play.ui.home;
+package com.iamyeong.superrace.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
