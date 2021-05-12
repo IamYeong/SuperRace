@@ -1,6 +1,8 @@
 package com.iamyeong.superrace;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +15,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText et_id, et_pw;
     private Button btn_sign_in, btn_sign_up;
     private ImageView img_kakao, img_facebook, img_naver;
+    private FragmentManager fragmentManager;
+    private FragmentTransaction fragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +26,27 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         allFindViewById();
         allSetOnClickListener(LoginActivity.this);
 
+        btn_sign_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+
+                UserRullsFragment fragment = new UserRullsFragment();
+
+                if (fragment.isAdded()) {
+                    fragmentTransaction.remove(fragment);
+                }
+
+                fragmentManager = LoginActivity.this.getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+
+                fragmentTransaction.add(R.id.constraint_login, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+
+            }
+        });
 
 
 

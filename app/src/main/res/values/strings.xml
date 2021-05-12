@@ -33,4 +33,30 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
+    <string name="rulls_agree">서비스 이용약관</string>
+    <string name="privacy_agree">개인정보 수집 및 이용동의</string>
+    <string name="message_agree">메시지 수신 동의</string>
+    <string name="essential_parentheses">(필수)</string>
+    <string name="optional_parentheses">(선택)</string>
+    <string name="user_agree">사용자 동의</string>
+    <string name="all_agree">모두 동의하기</string>
+
+    <string name="next">다음</string>
+
+    <string name="rulls_agree_content">
+        이 약관은 (주)슈퍼레이스가 제공하는 SUPERRACE FANTASY GAME시스템으로..
+    </string>
+
+    <string name="privacy_agree_content">
+        (주)슈퍼레이스는 개인정보보호법에 따라
+        이용자의 개인정보 및 권익을 보호하고 개인 정보와
+        관련한 이용자의 고충을 원활하게..
+    </string>
+
+    <string name="message_agree_content">
+        SUPERRACE FANTASY GAME 은 이벤트 및
+        서비스 안내문 발송 등 광고성 정보제공 등을 목적으로
+        아래와 같이 개인정보를 처리합니다..
+    </string>
+
 </resources>
