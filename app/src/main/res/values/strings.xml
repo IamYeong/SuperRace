@@ -58,5 +58,9 @@
         서비스 안내문 발송 등 광고성 정보제공 등을 목적으로
         아래와 같이 개인정보를 처리합니다..
     </string>
+    
+    <string name="game_strat_main">GAME \n START</string>
+    <string name="point_ranking_main">POINT \n RANKING</string>
+
 
 </resources>
