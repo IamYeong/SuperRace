@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +11,7 @@
 
     <ImageView
         android:id="@+id/img_logo_main"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:src="@drawable/logo_vertical"
 
@@ -18,155 +19,204 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
 
-        android:layout_margin="20dp"
         />
 
     <androidx.cardview.widget.CardView
+        android:backgroundTint="@color/white"
         android:id="@+id/card_start_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         app:layout_constraintTop_toBottomOf="@id/img_logo_main"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
 
-        app:cardCornerRadius="30dp"
+        app:cardCornerRadius="10dp"
         android:layout_margin="10dp"
         >
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/card_start_main"
 
             >
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/main_icon01"
 
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
+
                 />
 
-            <TextView
+
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:text="@string/game_strat_main"
-                android:textStyle="bold"
-                android:textSize="30dp"
-                android:textColor="@color/design_default_color_primary_dark"
-
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-
-                />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:src="@drawable/main_btn"
-
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
+                    android:text="@string/game_strat_main"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/design_default_color_primary_dark"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/main_btn"
+
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_point_ranking_main"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
         app:layout_constraintTop_toBottomOf="@id/card_start_main"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:cardCornerRadius="30dp"
-
-        android:layout_margin="10dp"
-        >
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-
-            android:gravity="center_horizontal"
-            >
-
-            <ImageView
-                android:id="@+id/img_point_main"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/main_icon02"
-
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/point_ranking_main"
-                app:layout_constraintTop_toBottomOf="@id/img_point_main"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-
-                android:textColor="@color/design_default_color_primary_dark"
-                android:textSize="30dp"
-                android:textStyle="bold"
-                />
-
-        </LinearLayout>
-
-        
-    </androidx.cardview.widget.CardView>
-
-    
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_schedule_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/card_start_main"
-        app:layout_constraintLeft_toRightOf="@id/card_point_ranking_main"
 
-        app:cardCornerRadius="30dp"
-        android:layout_margin="10dp"
         >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_point_ranking_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/card_start_main"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/card_schedule_main"
+
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+
+            android:layout_weight="1"
             >
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/main_icon03"
-                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/schedule_main"
+                android:gravity="center"
+                >
 
-                android:textSize="30dp"
-                android:textStyle="bold"
-                android:textColor="@color/design_default_color_primary_dark"
-                />
+                <ImageView
+                    android:id="@+id/img_point_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_icon02"
 
-        </LinearLayout>
-        
-        
-    </androidx.cardview.widget.CardView>
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/point_ranking_main"
+                    app:layout_constraintTop_toBottomOf="@id/img_point_main"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_schedule_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_start_main"
+            app:layout_constraintLeft_toRightOf="@id/card_point_ranking_main"
+            app:layout_constraintBottom_toBottomOf="@id/card_point_ranking_main"
+
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:backgroundTint="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_icon03"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule_main"
+
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
     
+
 </androidx.constraintlayout.widget.ConstraintLayout>
