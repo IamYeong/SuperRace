@@ -8,8 +8,21 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
 
+
     android:layout_gravity="center_vertical"
     >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_vertical"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_margin="20dp"
+        />
 
     <LinearLayout
         android:id="@+id/linear_login"
@@ -42,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="right"
+            android:gravity="center_horizontal"
 
             android:layout_marginBottom="20dp"
             >
@@ -52,12 +65,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/find_id"
+
+                android:textColor="@color/white"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/vertical_bar"
+                android:textColor="@color/white"
 
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -69,6 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/find_pw"
+                android:textColor="@color/white"
                 />
 
         </LinearLayout>
@@ -115,6 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/simple_sign_in"
+            android:textColor="@color/white"
 
             />
 
