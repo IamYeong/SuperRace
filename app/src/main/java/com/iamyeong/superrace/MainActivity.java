@@ -1,6 +1,7 @@
 package com.iamyeong.superrace;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,16 +9,16 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btn_play, btn_rank, btn_schedule;
+    private CardView card_start, card_point, card_schedule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn_play = findViewById(R.id.btn_play_main);
-        btn_rank = findViewById(R.id.btn_rank_main);
-        btn_schedule = findViewById(R.id.btn_schedule_main);
+        card_start = findViewById(R.id.card_start_main);
+        card_point = findViewById(R.id.card_point_ranking_main);
+        card_schedule = findViewById(R.id.card_schedule_main);
 
         allSetOnClickListener(MainActivity.this);
 
@@ -26,9 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void allSetOnClickListener(View.OnClickListener listener) {
 
-        btn_play.setOnClickListener(listener);
-        btn_rank.setOnClickListener(listener);
-        btn_schedule.setOnClickListener(listener);
+        card_start.setOnClickListener(listener);
+        card_point.setOnClickListener(listener);
+        card_schedule.setOnClickListener(listener);
 
     }
 
@@ -37,6 +38,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
 
+            case R.id.card_start_main :
+
+                System.out.println("START CARD CLICK!");
+                break;
+
+            case R.id.card_point_ranking_main :
+
+                System.out.println("POINT RANKING CARD CLICK!");
+                break;
+
+            case R.id.card_schedule_main :
+
+                System.out.println("SCHEDULE CARD CLICK!");
+                break;
         }
 
     }
