@@ -43,6 +43,9 @@
 
     <string name="next">다음</string>
 
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+
     <string name="rulls_agree_content">
         이 약관은 (주)슈퍼레이스가 제공하는 SUPERRACE FANTASY GAME시스템으로..
     </string>

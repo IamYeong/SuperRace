@@ -40,10 +40,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.card_start_main :
 
+                UsualDialog dialog = new UsualDialog(MainActivity.this, "테스트");
+                dialog.show();
+
                 System.out.println("START CARD CLICK!");
                 break;
 
             case R.id.card_point_ranking_main :
+
+                SingleDialog singleDialog = new SingleDialog(MainActivity.this, "테스트2");
+                singleDialog.show();
 
                 System.out.println("POINT RANKING CARD CLICK!");
                 break;

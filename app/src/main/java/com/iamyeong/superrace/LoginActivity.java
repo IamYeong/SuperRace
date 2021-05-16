@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -87,6 +88,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 String pw = et_pw.getText().toString();
 
                 System.out.println(id + ", " + pw);
+
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+
 
                 break;
 
