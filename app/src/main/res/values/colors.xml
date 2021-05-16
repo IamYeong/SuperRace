@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_navy_theme">#00113c</color>
     <color name="light_navy_theme">#006dcd</color>
+    <color name="middle_navy">#001c55</color>
 </resources>

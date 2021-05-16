@@ -7,12 +7,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-
-
+    android:background="@drawable/bg_only"
     android:layout_gravity="center_vertical"
     >
 
     <ImageView
+        android:id="@+id/img_logo_login"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:src="@drawable/logo_vertical"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
 
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo_login"
         app:layout_constraintBottom_toTopOf="@id/linaer_login_bottom"
         app:layout_constraintLeft_toLeftOf="parent"
         >
@@ -38,16 +38,25 @@
         <EditText
             android:id="@+id/et_login_id"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+
+            android:background="@drawable/custom_edittext"
 
             android:hint="@string/id"
+            android:textColorHint="@color/light_navy_theme"
+
+            android:layout_margin="5dp"
             />
 
         <EditText
             android:id="@+id/et_login_pw"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
 
+            android:background="@drawable/custom_edittext"
+
+            android:layout_margin="5dp"
+            android:textColorHint="@color/light_navy_theme"
             android:hint="@string/pw"
             />
 
@@ -57,7 +66,7 @@
             android:orientation="horizontal"
             android:gravity="center_horizontal"
 
-            android:layout_marginBottom="20dp"
+            android:layout_margin="20dp"
             >
 
             <TextView
@@ -90,25 +99,39 @@
 
         </LinearLayout>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/btn_sign_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
 
+            android:background="@drawable/custom_btn_light_navy"
+
+            android:layout_margin="5dp"
+
+            android:textColor="@color/white"
             android:text="@string/sign_in"
             />
 
-        <Button
+
+
+        <android.widget.Button
             android:id="@+id/btn_sign_up"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
 
+            android:background="@drawable/custom_btn_light_navy_line"
+
             android:text="@string/sign_up"
+            android:textColor="@color/light_navy_theme"
+
+            android:layout_margin="5dp"
             />
+
 
 
 
