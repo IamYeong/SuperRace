@@ -19,7 +19,7 @@
 
     </style>
 
-    <style name="Theme.SuperRace.NoActionBar">
+    <style name="Theme.SuperRace.NoActionBar" parent="Theme.AppCompat.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -28,8 +28,5 @@
 
     <style name="Theme.SuperRace.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="onlyline">
-        <item name="android:background">@drawable/custom_btn_light_navy_line</item>
-    </style>
 
 </resources>
